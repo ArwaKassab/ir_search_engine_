@@ -45,7 +45,7 @@ Running *search* by running main.py to try the search engine.
 - *Create Inverted Index*:
    Gets the weighted inverted index for the given dataset.
   
-- *Ranking&ةmatching*:
+- *Ranking&matching*:
    Performs a query search and returns ranked documents.
 
  - *Search*:
@@ -58,7 +58,7 @@ Running *search* by running main.py to try the search engine.
    Precision@10.
    to run the evaluation just go to evaluation.py file and run it.
 
-- *EXTRA*:
+- *EXTRA Requirments*:
    1-Query Suggestions & Correction_suggestion
    2-Crawling
 
