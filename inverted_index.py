@@ -17,15 +17,7 @@ _wiki_documents_vector = None
 
 
 def set_inverted_index_store_global_variables() -> None:
-    """
-    Get a weighted inverted index for both technology and quora from a "shelve" file and assign it to its global variable
-    Get a documents vector for both technology and quora from a "shelve" file and assign it to its global variable
 
-    Args:
-        No args
-    Returns:
-        None
-    """
     global _antique_weighted_inverted_index
     global _antique_documents_vector
     global _wiki_weighted_inverted_index
