@@ -8,7 +8,7 @@ A university project that uses two datasets from [ir-datasets](https://ir-datase
 
 - [antique](https://ir-datasets.com/antique.html#antique/train).
 
-- [wicir](https://ir-datasets.com/wikir.html#wikir/en1k).
+- [wikir](https://ir-datasets.com/wikir.html#wikir/en1k).
 
 
 ## How to run the project?
