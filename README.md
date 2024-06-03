@@ -26,7 +26,7 @@ Running *search* by running main.py to try the search engine.
 
 - *Data Processing*:
 
- The implemented text processing steps are:
+   The implemented text processing steps are:
 
    1. _expand_abbreviations
    
@@ -42,7 +42,7 @@ Running *search* by running main.py to try the search engine.
    
    6. _remove_punctuations
 
--*Create Inverted Index*:
+- *Create Inverted Index*:
   Gets the weighted inverted index for the given dataset.
   
 - *Ranking&ةmatching*:
@@ -57,9 +57,9 @@ Running *search* by running main.py to try the search engine.
 - *Evaluation*:
    The implemented evaluation metrics are Precision, Recall, MAP, MRR and 
    Precision@10.
-  to run the evaluation just go to evaluation.py file and run it.
+   to run the evaluation just go to evaluation.py file and run it.
 
--*EXTRA*:
+- *EXTRA*:
    1-Query Suggestions & Correction_suggestion
    2-Crawling
 
