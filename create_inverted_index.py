@@ -18,9 +18,7 @@ dataset_name='antique'
 
 
 file_path = 'C:\\Users\\ARWAA\\.ir_datasets\\antique\\processed_collection.tsv'
-
 df = pd.read_csv(file_path, sep='\t', header=None, names=['doc_id', 'doc_content'])
-
 antique = dict(zip(df['doc_id'], df['doc_content']))
 create_weighted_inverted_index_from_tsv(antique, 'antique')
 
