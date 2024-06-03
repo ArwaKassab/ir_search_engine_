@@ -8,12 +8,7 @@ import string
 from datetime import datetime
 from dateutil import parser
 
-# تأكد من تحميل البيانات اللازمة من مكتبة nltk
-# nltk.download('punkt')
-# nltk.download('wordnet')
-# nltk.download('stopwords')
 
-# تابع لتوسيع الاختصارات
 def _expand_abbreviations(text, abbreviations):
     for abbr, expanded in abbreviations.items():
         text = re.sub(r'\b' + re.escape(abbr) + r'\b', expanded, text)
@@ -138,21 +133,3 @@ def get_preprocessed_text_terms(text: str,dataset_name:str) -> str:
     tokens = _remove_punctuations(tokens)
 
     return tokens
-
-
-
-# قراءة الملف TSV
-# data = pd.read_csv(r'C:\Users\User\Desktop\ir_project\collection.tsv', sep='\t', header=None, names=['ID', 'Text'])
-# # data = pd.read_csv(r'C:\Users\ARWAA\.ir_datasets\antique\arwa.tsv', sep='\t', header=None, names=['ID', 'Text'])
-
-# # إزالة الصفوف التي تحتوي على قيم غير نصية أو فارغة في عمود Text
-# data = data.dropna(subset=['Text'])
-# data = data[data['Text'].apply(lambda x: isinstance(x, str))]
-
-# # معالجة جميع الصفوف في البيانات الأصلية
-# data[ 'tokens'] = data['Text'].apply(get_preprocessed_text)
-# data[ 'tokens'] = data[ 'tokens'].apply(get_preprocessed_tokens_terms)
-
-# data[['ID', 'tokens']].to_csv(r'C:\Users\User\Desktop\ir_project\processedddddd.tsv', sep='\t', index=False)
-# # data[['ID', 'tokens']].to_csv(r'C:\Users\ARWAA\Desktop\paython\arwa.tsv', sep='\t', index=False)
-# print("تم حفظ النتائج في الملف الأصلي.")

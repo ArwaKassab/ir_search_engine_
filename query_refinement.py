@@ -8,7 +8,7 @@ from typing import Dict
 
 _antique_queries = set()
 _wiki_queries = set()
-_initialized = False  # متغير للتحقق من حالة التهيئة
+_initialized = False  
 
 def __get_queries_corpus1(file_path: str) -> Dict[str, str]:
     queries_df = pd.read_csv(file_path, sep='\t', header=None, names=['query_id', 'query_text'])
@@ -44,7 +44,7 @@ def set_query_refinement_global_variables() -> None:
     global _initialized
 
     if _initialized:
-        return  # منع إعادة التهيئة إذا كانت التهيئة قد تمت بالفعل
+        return 
 
     _antique_queries = set()
     _wiki_queries = set()
@@ -52,7 +52,7 @@ def set_query_refinement_global_variables() -> None:
     file_path1 = "C:\\Users\\ARWAA\\.ir_datasets\\antique\\processed_queries.tsv"
     file_path2 = "C:\\Users\\ARWAA\\Desktop\\IR3\\wiki\\cleaned_queries.tsv"
 
-    # تحقق من وجود الاستعلامات في قاعدة البيانات قبل التهيئة
+
     with shelve.open('C:\\Users\\ARWAA\\Desktop\\IR3\\db\\' + "antique" + '_queries.db') as db:
         if 'queries' in db and len(db['queries']) > 0:
             _antique_queries = db['queries']
@@ -71,7 +71,7 @@ def set_query_refinement_global_variables() -> None:
                 index_query(query_text, 'wiki')
             _wiki_queries = set(wiki_queries.values())
 
-    _initialized = True  # تحديد أن التهيئة قد تمت
+    _initialized = True 
 
 def _get_query_suggestions(query: str, dataset_name: str) -> list:
     global _antique_queries
