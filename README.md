@@ -43,15 +43,14 @@ Running *search* by running main.py to try the search engine.
    6. _remove_punctuations
 
 - *Create Inverted Index*:
-  Gets the weighted inverted index for the given dataset.
+   Gets the weighted inverted index for the given dataset.
   
 - *Ranking&ةmatching*:
-  Performs a query search and returns ranked documents.
+   Performs a query search and returns ranked documents.
 
  - *Search*:
-
- Performs search query and get full documnents results based on passed   
- query and dataset passed.
+   Performs search query and get full documnents results based on passed   
+   query and dataset passed.
 
 - *Query Processing*
 - *Evaluation*:
